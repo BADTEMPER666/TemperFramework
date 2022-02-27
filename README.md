@@ -1,2 +1,2 @@
 # TemperFramework
-This is a .NET RPG framework
+.NET RPG framework
