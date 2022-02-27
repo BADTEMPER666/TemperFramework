@@ -19,6 +19,7 @@ namespace Temper_Framework.Handler
         public static void SaveConfig()
         {
             ConfigurationManager.AppSettings.Set("Health", Player.Helath.ToString());
+            ConfigurationManager.AppSettings.Set("Syringes", Player.Syringes.ToString());
         }
 
         public static void ReadConfig()
