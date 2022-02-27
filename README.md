@@ -16,4 +16,4 @@
 * Then type "Using Temper_Framework;" where-ever you want to use the library
 
 ## Compatability 
-*TemperFramework uses ANYCPU as a configuration, so it supports 32 and 64 bit*
+**TemperFramework uses ANYCPU as a configuration, so it supports 32 and 64 bit**
