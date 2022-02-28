@@ -14,5 +14,9 @@ namespace Temper_Framework.Handler
             Player.Helath = num;
         }
 
+        public static void Heal(int num)
+        {
+            Player.Helath = Player.Helath + num;
+        }
     }
 }

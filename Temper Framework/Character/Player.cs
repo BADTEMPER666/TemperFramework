@@ -8,8 +8,10 @@ namespace Temper_Framework.Character
 {
     public static class Player
     {
-        public static int Helath =  0;
+        public static int Helath;
 
-        public static int Syringes = 0;
+        public static int maxHealth;
+
+        public static int Syringes;
     }
 }

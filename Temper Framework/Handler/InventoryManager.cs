@@ -18,5 +18,25 @@ namespace Temper_Framework.Handler
         {
             Player.Syringes = num;
         }
+
+        public static void useSyringe()
+        {
+            if (Player.Syringes > 0)
+            {
+                if (Player.Helath == 100)
+                {
+
+                }
+                else
+                {
+                    Player.Syringes--;
+                    PlayerManager.Heal(10);
+                }
+            }
+            else if (Player.Syringes < 0)
+            {
+
+            }
+        }
     }
 }
