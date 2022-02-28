@@ -19,4 +19,4 @@
 **TemperFramework uses ANYCPU as a configuration, so it supports 32 and 64 bit**
 
 ## Known issues
-* Save config system is a bit broken currently
+* Save config system is a bit broken currently, might make my own config system
