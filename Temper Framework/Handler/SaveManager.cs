@@ -26,6 +26,8 @@ namespace Temper_Framework.Handler
         {
             // config values arent an int or a string so you have to make them whatever they are meant to be //
 
+            ConfigurationManager.RefreshSection(ConfigurationManager.AppSettings.Get("Health"));
+            ConfigurationManager.RefreshSection(ConfigurationManager.AppSettings.Get("Syringes"));
             saveHealth = Int32.Parse(ConfigurationManager.AppSettings.Get("Health"));
             saveSyringes = Int32.Parse(ConfigurationManager.AppSettings.Get("Syringes"));
         }
