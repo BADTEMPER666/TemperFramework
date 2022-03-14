@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,32 +11,19 @@ namespace Temper_Framework.Handler
     {
         public static void addSyringe(int num)
         {
-            Player.Syringes = num;
+            Player.Syringes += num;
         }
 
         public static void removeSyringe(int num)
         {
-            Player.Syringes = num;
+            Player.Syringes -= num;
         }
 
         public static void useSyringe()
         {
-            if (Player.Syringes > 0)
-            {
-                if (Player.Helath == 100)
-                {
-
-                }
-                else
-                {
-                    Player.Syringes--;
-                    PlayerManager.Heal(10);
-                }
-            }
-            else if (Player.Syringes < 0)
-            {
-
-            }
+            if (Player.Syringes <= 0 || ((Player.Helath + 10) > Player.maxHealth)) return;
+            removeSyringe(1);
+            PlayerManager.Heal(10);
         }
     }
 }
